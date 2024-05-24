@@ -1,0 +1,50 @@
+* { 
+box-sizing: border-box; 
+margin: 0px; 
+padding: 0px; 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+} 
+
+h1{ text-align: center; font-size: 175%;}
+
+h2{ position: absolute; 
+    top: 0px; right: 0px; 
+    height: 30px; 
+    font-size: 125%; 
+    padding: 0px 15px; 
+    border-bottom: 1px solid black; 
+    border-left: 1px solid black;}
+
+p{ text-align: left; margin: 10px; margin-top: 35px; } 
+
+div{ margin-right: auto; margin-left: auto;  }
+
+.row { width: 100%; }
+
+.box { 
+    background-color: lightgray;
+    margin: 10px;
+    border: 1px solid black; 
+    position: relative; }
+
+
+.chicken { background-color: hotpink; color: white;}
+.beef { background-color: teal; color: white;}
+.sushi {  background-color: orange; color: white;}
+
+
+@media ( min-width: 992px) { 
+div {float: left; }
+.col-lg-4 {  width: 33.33%;  }
+}
+
+@media ( min-width: 768px ) and ( max-width: 991px ) { 
+div {float: left; }
+.col-md-6 {  width: 50%;  }
+}
+
+@media ( max-width: 767px ) { 
+div {float: left; }
+.col-sm-12 {  width: 100%;  }
+}
